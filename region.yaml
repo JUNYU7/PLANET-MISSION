@@ -1,0 +1,157 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e7]: PlanetMission
+      - generic [ref=e8]: 火星巡视器仿真环境生成与可视化平台
+    - navigation [ref=e9]:
+      - button "火星全球" [ref=e10] [cursor=pointer]
+      - button "区域场景" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - button "任务规划" [ref=e33] [cursor=pointer]
+      - generic [ref=e13]: 画质
+      - generic [ref=e14]:
+        - button "标准" [ref=e15] [cursor=pointer]
+        - button "高清" [ref=e16] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e34]:
+      - complementary [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: 图层控制
+          - button "复位" [ref=e38] [cursor=pointer]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41] [cursor=pointer]:
+              - checkbox "原始影像" [checked] [ref=e42]
+              - generic [ref=e44]: 原始影像
+            - generic [ref=e45]:
+              - generic [ref=e46]: 不透明度
+              - slider [ref=e47] [cursor=pointer]: "1"
+              - generic [ref=e48]: 100%
+          - generic [ref=e50] [cursor=pointer]:
+            - checkbox "地形晕渲" [ref=e51]
+            - generic [ref=e53]: 地形晕渲
+          - generic [ref=e55] [cursor=pointer]:
+            - checkbox "坡度" [ref=e56]
+            - generic [ref=e58]: 坡度
+          - generic [ref=e60] [cursor=pointer]:
+            - checkbox "曲率" [ref=e61]
+            - generic [ref=e63]: 曲率
+          - generic [ref=e65] [cursor=pointer]:
+            - checkbox "粗糙度" [ref=e66]
+            - generic [ref=e68]: 粗糙度
+          - generic [ref=e70] [cursor=pointer]:
+            - checkbox "可通行性" [ref=e71]
+            - generic [ref=e73]: 可通行性
+          - generic [ref=e75] [cursor=pointer]:
+            - checkbox "语义分类" [ref=e76]
+            - generic [ref=e78]: 语义分类
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: 可多选，显示按列表自下而上叠加：原始影像在最底层，语义分类在最上层。 灰度影像用于判读地形，可通行性与语义图层用于判读地面属性。
+          - paragraph [ref=e81]: 已启用 1 / 7
+      - generic [ref=e82]:
+        - generic:
+          - generic:
+            - generic: E 440.0 m · S 600.0 m
+            - generic: 离地高度 19.1 m · 太阳高度角 38.0°
+            - generic: 第一人称贴地 · WASD 移动 · 空格 上升 · Shift 下降 · Ctrl 加速 · F 切换贴地/飞行 · V 切换环绕
+        - generic:
+          - generic: 北 N
+          - generic: 南 S
+          - generic: 西 W
+          - generic: 东 E
+        - generic: 渲染分辨率 1025×840 · 网格 1025²
+      - complementary [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: 区域信息
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - term [ref=e90]: 着陆点
+              - definition [ref=e91]: 18.4663°N 77.4298°E
+            - generic [ref=e92]:
+              - term [ref=e93]: 裁剪中心
+              - definition [ref=e94]: 18.4500°N 77.4423°E
+            - generic [ref=e95]:
+              - term [ref=e96]: 场景边长
+              - definition [ref=e97]: 2000 m
+            - generic [ref=e98]:
+              - term [ref=e99]: 分辨率
+              - definition [ref=e100]: 1.0 m/px
+            - generic [ref=e101]:
+              - term [ref=e102]: 坐标系
+              - definition [ref=e103]: ESRI:103885
+            - generic [ref=e104]:
+              - term [ref=e105]: 数据来源
+              - definition [ref=e106]: Mars 2020 TRN HiRISE DTM Mosaic (SOC 006) + orthomosaic, MOLA topography / DeltaGeoid blend
+            - generic [ref=e107]:
+              - term [ref=e108]: 许可
+              - definition [ref=e109]: NASA PDS / USGS Astrogeology
+        - generic [ref=e110]:
+          - generic [ref=e111]: 高程剖面
+          - generic [ref=e112]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: 东西向
+              - generic [ref=e119]: 南北向
+            - generic [ref=e121]: 相对起伏 12.8 ~ 36.7 m绝对海拔 -2588.0 ~-2531.4 m
+        - generic [ref=e122]:
+          - generic [ref=e123]: 可通行性统计
+          - generic [ref=e124]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: 可通行
+              - generic [ref=e129]: 78.5%
+            - generic [ref=e133]:
+              - generic [ref=e134]: 缓行
+              - generic [ref=e136]: 9.0%
+            - generic [ref=e140]:
+              - generic [ref=e141]: 禁行
+              - generic [ref=e143]: 0.6%
+            - generic [ref=e147]:
+              - generic [ref=e148]: 不确定带
+              - generic [ref=e150]: 11.9%
+            - generic [ref=e153]: 阈值 TI ≥ 0.7 可通行，0.4–0.7 缓行， 不确定带宽 ±0.03坡度中位数 2.83° · P95 8.72° · 最大 33.35°
+        - generic [ref=e154]:
+          - generic [ref=e155]: 地方时与光照
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - generic [ref=e158]: Sol 时 08:30
+              - generic [ref=e159]: 太阳高度角 38.0°
+            - slider [ref=e160] [cursor=pointer]: "8.5"
+            - generic [ref=e161]:
+              - generic [ref=e162]: 0h
+              - generic [ref=e163]: 6h
+              - generic [ref=e164]: 12h
+              - generic [ref=e165]: 18h
+              - generic [ref=e166]: 24h
+            - paragraph [ref=e167]: 火星太阳日长 24.6597 小时。 调整滑块可观察阴影方向随地方时变化。
+        - generic [ref=e168]:
+          - generic [ref=e169]: 显示设置
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: 垂直夸张
+              - generic [ref=e173]: 2.5×
+            - slider "垂直夸张系数" [ref=e174] [cursor=pointer]: "2.5"
+            - generic [ref=e175]:
+              - generic [ref=e176]: 1× 真实
+              - generic [ref=e177]: 6×
+            - paragraph [ref=e178]: 本区域 1 km 内高差仅 36.7 m， 而火星车眼高约 2 m，真实比例下地物显得极矮小。 垂直夸张是行星地形图的常规做法，仅改变显示高度， 不影响坡度与可通行性判定。
+            - generic [ref=e179] [cursor=pointer]:
+              - checkbox "显示 100 m 参照网格" [ref=e180]
+              - generic [ref=e181]: 显示 100 m 参照网格
+            - paragraph [ref=e182]: 网格提供距离参照，用于判读地形尺度
+        - generic [ref=e183]:
+          - generic [ref=e184]: Gazebo 仿真导出
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: 将本区域地形打包为可直接在 Gazebo / ROS2 中运行的仿真包 （火星重力 3.71 m/s²、暖色天空、地形与 ROS2 启动文件）。
+            - button "下载 Gazebo 包 (zip)" [ref=e187] [cursor=pointer]
+      - generic [ref=e189]:
+        - generic [ref=e190]: jezero landing site
+        - generic [ref=e191]: "|"
+        - generic [ref=e192]: 1.0 m/px
+        - generic [ref=e193]: "|"
+        - generic [ref=e194]: 网格 1025²
+        - generic [ref=e195]: "|"
+        - generic [ref=e196]: 相对起伏 0.0 ~ 56.6 m
+        - generic [ref=e197]: "|"
+        - generic [ref=e198]: 绝对海拔 -2588.0 ~ -2531.4 m
+        - generic [ref=e199]: "|"
+        - generic [ref=e200]: 120 FPS
+        - generic [ref=e201]: ESRI:103885 · NASA PDS / USGS Astrogeology

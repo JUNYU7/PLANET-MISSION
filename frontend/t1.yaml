@@ -1,0 +1,19 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e7]: PlanetMission
+      - generic [ref=e8]: 火星巡视器仿真环境生成与可视化平台
+    - navigation [ref=e9]:
+      - button "火星全球" [ref=e10] [cursor=pointer]
+      - button "区域场景" [disabled] [ref=e11] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: 已注册区域
+        - button "jezero landing site 18.4663°N 77.4298°E · 1000 m" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: jezero landing site
+          - generic [ref=e21]: 18.4663°N 77.4298°E · 1000 m
+      - generic [ref=e22]:
+        - generic [ref=e23]: 已注册区域
+        - paragraph [ref=e26]: 点击标记或列表项进入区域三维场景。球体贴图为火星全球影像， 仅用于定位与展示，不参与地形计算。
+      - generic [ref=e28]: 贴图 1440×720 · 建议球体直径 500 px

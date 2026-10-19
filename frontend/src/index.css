@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #0d0b0a;
+    color: #f5ede6;
+    font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #141110;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3a2e27;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8563f;
+  }
+}
+
+@layer components {
+  /* 面板：低对比层次，避免纯黑纯白的生硬 */
+  .panel {
+    @apply bg-ink-800 border border-ink-600;
+  }
+
+  .panel-header {
+    @apply text-xs font-semibold text-bone-dim uppercase tracking-wider
+      px-3 py-2 border-b border-ink-600;
+  }
+
+  /* 任务控制台面板：更深的底 + 毛玻璃 + 发丝边框 */
+  .console-panel {
+    @apply bg-ink-900/85 backdrop-blur-sm border border-ink-600/70;
+  }
+
+  /* 控制台节标题：大写微标签（NASA 遥测屏风格） */
+  .console-header {
+    @apply px-3 py-2 text-[10px] font-semibold uppercase text-bone-dim
+      border-b border-ink-600/70;
+    letter-spacing: 0.18em;
+  }
+
+  /* 读数行：左侧大写微标签 + 右侧等宽数值 */
+  .readout-label {
+    @apply text-[9px] uppercase text-bone-faint shrink-0;
+    letter-spacing: 0.15em;
+  }
+
+  /* HUD 角标：左上/右下括号，营造仪表屏边框感 */
+  .hud-corners {
+    position: relative;
+  }
+  .hud-corners::before,
+  .hud-corners::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    pointer-events: none;
+  }
+  .hud-corners::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid #e8613c;
+    border-left: 1px solid #e8613c;
+  }
+  .hud-corners::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid #e8613c;
+    border-right: 1px solid #e8613c;
+  }
+
+  /* 数值统一等宽，保证数字对齐便于比对 */
+  .num {
+    @apply font-mono text-bone;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .btn {
+    @apply px-3 py-1.5 text-sm border border-ink-500 bg-ink-700 text-bone-dim
+      transition-colors duration-150 cursor-pointer select-none;
+  }
+
+  .btn:hover {
+    @apply text-bone border-rust-muted bg-ink-600;
+  }
+
+  .btn-active {
+    @apply text-rust-bright border-rust bg-ink-600;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 px-1.5 py-0.5 text-xs
+      border border-ink-500 text-bone-faint;
+  }
+}
+
+/* 滑块：细轨道 + 小方块手柄，符合工业风 */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: #3a2e27;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 9px;
+  height: 12px;
+  background: #c1440e;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: #e8613c;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 9px;
+  height: 12px;
+  background: #c1440e;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  accent-color: #c1440e;
+  cursor: pointer;
+}
